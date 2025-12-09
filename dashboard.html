@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Send File Box -->
+    <div class="container">
+      <h2>Encrypt & Send File</h2>
+      <div id="messageBox" class="msgBox"></div>
+      
+      <input type="file" id="fileInput">
+      
+      <label for="employeeSelect">Send to Employees:</label>
+      
+      <!-- Send to all employees option -->
+      <div class="select-all-container">
+        <label>
+          <input type="checkbox" id="selectAllEmployees">
+          Send to All Employees
+        </label>
+      </div>
+      
+      <!-- Employees list -->
+      <div id="employeesList" class="employees-list">
+        <!-- Will be populated by JavaScript -->
+      </div>
+      
+      <button id="encryptBtn">Encrypt & Send</button>
+    </div>
+
+    <!-- Received Documents Box -->
+    <div class="container">
+      <h2>Received Documents</h2>
+      <div id="receivedList" class="received-files">
+        <!-- Will be populated -->
+      </div>
+    </div>
+
+    <button id="logoutBtn">Logout</button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
