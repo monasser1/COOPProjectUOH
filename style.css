@@ -1,0 +1,347 @@
+/* general */
+body {
+  font-family: Poppins, sans-serif;
+  background: #f2f5f9;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+  margin-top: -100px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  margin-top: 10px;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+  font-weight: 500;
+}
+
+.message.error {
+  background: #ffdddd;
+  color: #d60000;
+  border-left: 5px solid #d60000;
+}
+
+.message.success {
+  background: #ddffdd;
+  color: #0c8b0c;
+  border-left: 5px solid #0c8b0c;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Input and Select Styles */
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  background: white;
+}
+
+/* Button Styles */
+button {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Styles */
+.msgBox {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.errorMsg {
+  background: #ffdddd;
+  color: #d60000;
+  border-left: 5px solid #d60000;
+}
+
+.successMsg {
+  background: #ddffdd;
+  color: #0c8b0c;
+  border-left: 5px solid #0c8b0c;
+}
+
+/* Received Files */
+.received-files {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.file-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.file-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.file-item strong {
+  color: #333;
+  font-size: 14px;
+}
+
+.file-item small {
+  color: #666;
+  font-size: 12px;
+}
+
+.file-item button {
+  width: auto;
+  padding: 8px 15px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Employees List Styles */
+.employees-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0 15px;
+  background-color: white;
+  text-align: left;
+}
+
+.employee-checkbox {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.employee-checkbox:hover {
+  background-color: #f8f9fa;
+}
+
+.employee-checkbox:last-child {
+  border-bottom: none;
+}
+
+.employee-checkbox label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.employee-checkbox input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.employee-checkbox input[type="checkbox"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Select All Container */
+.select-all-container {
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.select-all-container label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+
+.select-all-container input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Logout Button */
+#logoutBtn {
+  width: 200px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6c757d;
+}
+
+#logoutBtn:hover {
+  background-color: #5a6268;
+}
+
+/* Scrollbar Styling */
+.employees-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.employees-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.employees-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.employees-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Headers in received files */
+.received-files h3 {
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .login-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* File input styling */
+input[type="file"]::file-selector-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0056b3;
+}
