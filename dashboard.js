@@ -423,7 +423,7 @@ async function loadReceivedFiles() {
 
     if (receivedFiles.length > 0) {
       const receivedHeader = document.createElement("h3");
-      receivedHeader.textContent = "Received Files";
+      receivedHeader.textContent = "Received Documents";
       receivedHeader.style.marginTop = "20px";
       receivedHeader.style.color = "#333";
       receivedList.appendChild(receivedHeader);
@@ -444,7 +444,7 @@ async function loadReceivedFiles() {
 
     if (sentFiles.length > 0) {
       const sentHeader = document.createElement("h3");
-      sentHeader.textContent = "Sent Files";
+      sentHeader.textContent = "Sent Documents";
       sentHeader.style.marginTop = "20px";
       sentHeader.style.color = "#333";
       receivedList.appendChild(sentHeader);
